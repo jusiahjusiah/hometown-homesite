@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.center {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.hero {
+    padding-inline: 20px;
+    background-image: url("assets/maldives.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2em;
+    margin-top: 150px;
+    
+
+}
+
+.title-style {
+    font-weight: 400;
+    background-color: #eee1d9;
+    padding-inline: 50px;
+    padding-block: 15px;
+    color: #0d3936;
+    margin-bottom: 30px;
+    box-shadow: 7px 10px 14px -5px rgba(0,0,0,0.75);
+}
+
+.hero-subtitle {
+    font-size: 1.3em;
+    margin: 20px 0 0 100px;
+}
+
+.activity-container {
+    padding-inline: 20px;
+    flex-direction: column;
+    padding-block: 50px;
+    background-color: #f1fafd;
+}
+.activity-container h1 {
+    color: #0d3936;
+}
+
+.activity-item-container {
+    padding-block: 20px;
+    padding-inline: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    text-align: center;
+    
+}
+
+.activity-item-container img {
+    margin-block: 30px;
+    height: 200px;
+    width:230px;
+    border-radius: 50%;
+}
+
+.activity-item {
+    max-width: 400px;
+}
+
+.activity-item h3 {
+    margin-block-end: 25px;
+}
+
+.guide-section {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 80px;
+    background-color: #0d3936;
+}
+
+.guide-item {
+    padding: 50px;
+    background-color: #ffb703;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 300px);
+    border-radius: 10px;
+    border-bottom: 8px solid #e76f51;
+    box-shadow: 10px 10px 23px -10px rgba(0,0,0,0.75);
+    
+}
+
+.item {
+    padding-inline: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em
+}
+
+.item h1 {
+    text-shadow: -1px 1px 0.5px rgb(83, 83, 83);;
+}
+
+.item p {
+    font-weight: 400;
+    padding-block: 30px;
+    text-justify: auto;
+    
+}
+
+.item img {
+    height: 400px;
+    width: 250px; 
+    border-radius: 10px;
+
+}
+
+.item:nth-child(2) {
+    margin-top: 30px;
+    margin-block-start: 20px;
+    color: #012423;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+
+    .activity-item-container {
+        flex-direction: column;
+    }
+
+    .guide-item {
+        max-width: 600px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .title-style {
+        font-size: 12px;
+    }
+
+    .hero-subtitle {
+        padding-inline: 10px;
+        margin: 20px 0;
+    }
+
+  }
+
